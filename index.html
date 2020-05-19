@@ -1,13 +1,21 @@
----
-layout: presentation
----
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>19级计网1班-祝江涛</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<body>
+<div class="header">
+  <h1>19级计网1班祝江涛的个人网站</h1>
+</div>
+<div class="main">
+  <nav class="navbar"><a href="about.html" target="iframe">关于</a><a href="photo.html" target="iframe">相册</a><a href="works.html" target="iframe">作品</a><a href="article.html" target="iframe">文章</a><a href="bbs.html" target="iframe">联系</a></nav>
+  <section class="section">
+    <iframe src='about.html' name="iframe"></iframe>
+  </section>
+</div>
+<div class="footer">Copyright ©2020 zhjt All rights reserved.</div>
+</body>
+</html>
